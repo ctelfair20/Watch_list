@@ -1,10 +1,18 @@
 .App {
   text-align: center;
+  background: #6c9748;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 60px;
+  width: 100%;
+}
+
+.header-content {
+  padding: 10px;
 }
 
 @media (prefers-reduced-motion: no-preference) {
@@ -32,6 +40,7 @@
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(360deg);
   }
