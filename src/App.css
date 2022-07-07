@@ -4,6 +4,7 @@
 }
 
 header {
+  background: #f0d62d;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -13,6 +14,28 @@ header {
 
 .header-content {
   padding: 10px;
+  background: #8e7c0a;
+}
+
+.random-content {
+  display: flex;
+  justify-content: space-between;
+  margin: 20px;
+  background: #61dafb;
+}
+
+.genre-container {
+  background: rgb(4, 4, 212);
+  color: white;
+  border: 3px solid salmon;
+  height: 200px;
+  width: 260px;
+}
+
+.choice-container {
+  background: rgb(79, 79, 132);
+  color: white;
+  border: 3px solid salmon;
 }
 
 @media (prefers-reduced-motion: no-preference) {

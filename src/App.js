@@ -1,10 +1,16 @@
 import './App.css';
 import Header from './Header';
+import GenreBox from "./GenreBox";
+import ChoiceBox from './ChoiceBox';
 
 function App() {
   return (
     <div className="App">
       <Header />
+      <div className="random-content">
+        <GenreBox />
+        <ChoiceBox />
+      </div>
     </div>
   );
 }
