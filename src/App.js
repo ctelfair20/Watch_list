@@ -2,6 +2,7 @@ import './App.css';
 import Header from './Header';
 import GenreBox from "./GenreBox";
 import ChoiceBox from './ChoiceBox';
+import WatchList from './WatchList';
 
 function App() {
   return (
@@ -10,6 +11,19 @@ function App() {
       <div className="random-content">
         <GenreBox />
         <ChoiceBox />
+      </div>
+      <div className="watch-list-container">
+        <WatchList />
+        <WatchList />
+        <WatchList />
+        <WatchList />
+        <WatchList />
+        <WatchList />
+      </div>
+      <div className="watched-list-container">
+        <WatchList />
+        <WatchList />
+        <WatchList />
       </div>
     </div>
   );

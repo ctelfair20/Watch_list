@@ -25,17 +25,36 @@ header {
 }
 
 .genre-container {
+  font-size: 30px;
   background: rgb(4, 4, 212);
   color: white;
   border: 3px solid salmon;
   height: 300px;
-  width: 260px;
+  width: 540px;
 }
 
 .choice-container {
   background: rgb(79, 79, 132);
   color: white;
   border: 3px solid salmon;
-  height: 300px;
-  width: 360px;
+  height: 500px;
+  width: 560px;
+}
+
+.watch-container {
+  background: rgb(79, 79, 132);
+  color: white;
+  border: 3px solid salmon;
+  height: 200px;
+  width: 250px;
+}
+
+.watch-list-container,
+.watched-list-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding-bottom: 20px;
+  margin: 20px;
+  background: rgb(158, 54, 84);
 }

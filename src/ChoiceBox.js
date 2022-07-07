@@ -6,8 +6,8 @@ const ChoiceBox = () => {
       </div>
       <img
         src="https://static.wikia.nocookie.net/yakusokunoneverland/images/c/cb/Anime_date_announcement.png/revision/latest?cb=20190112054937"
-        width="360px"
-        height="200px"
+        height="400px"
+        width="560px"
         alt="Anime Cover Art"
         className="cover"
       />
