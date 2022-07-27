@@ -16,7 +16,8 @@ function App() {
         <GenreBox />
         <ChoiceBox />
       </div>
-      <div className="watch-list-container">
+      {/* let's keep it simple */}
+      {/* <div className="watch-list-container">
         <WatchList />
         <WatchList />
         <WatchList />
@@ -28,7 +29,7 @@ function App() {
         <WatchList />
         <WatchList />
         <WatchList />
-      </div>
+      </div> */}
     </div>
   );
 }
