@@ -2,13 +2,13 @@ const Header = () => {
   return (
     <header>
       <div className="header-content">
-        <span>Anime WatchList</span>
+        <span>What's next on your Anime Watchlist?</span>
       </div>
-      <div className="header-content">
+      {/* <div className="header-content">
         <button>
           Add +
         </button>
-      </div>
+      </div> */}
     </header>
   );
 }

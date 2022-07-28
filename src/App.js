@@ -1,5 +1,5 @@
 import './App.css';
-// import Header from './Header';
+import Header from './Header';
 import GenreBox from "./GenreBox";
 import ChoiceBox from './ChoiceBox';
 // import WatchList from './WatchList';
@@ -7,7 +7,7 @@ import ChoiceBox from './ChoiceBox';
 function App() {
   return (
     <div className="App">
-      {/* <Header /> */}
+      <Header />
       <div className="random-content">
         <GenreBox />
         <ChoiceBox />
@@ -26,6 +26,7 @@ function App() {
         <WatchList />
         <WatchList />
       </div> */}
+      <Header />
     </div>
   );
 }

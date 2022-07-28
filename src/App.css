@@ -19,10 +19,10 @@ code {
   background: #6c9748;
 }
 
-/* header {
+header {
   background: #f0d62d;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   height: 60px;
   width: 100%;
@@ -31,7 +31,7 @@ code {
 .header-content {
   padding: 10px;
   background: #8e7c0a;
-} */
+}
 
 .random-content {
   display: flex;
