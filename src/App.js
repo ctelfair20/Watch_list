@@ -1,17 +1,13 @@
 import './App.css';
-import Header from './Header';
+// import Header from './Header';
 import GenreBox from "./GenreBox";
 import ChoiceBox from './ChoiceBox';
-import WatchList from './WatchList';
+// import WatchList from './WatchList';
 
 function App() {
   return (
     <div className="App">
-      {
-        localStorage.setItem('obj', JSON.stringify({ num: 2, char: "r" }))
-      }
-      {console.log(typeof JSON.parse(localStorage.getItem('obj')))}
-      <Header />
+      {/* <Header /> */}
       <div className="random-content">
         <GenreBox />
         <ChoiceBox />

@@ -1,9 +1,10 @@
 .App {
   text-align: center;
   background: #6c9748;
+  height: 800px;
 }
 
-header {
+/* header {
   background: #f0d62d;
   display: flex;
   justify-content: space-between;
@@ -15,7 +16,7 @@ header {
 .header-content {
   padding: 10px;
   background: #8e7c0a;
-}
+} */
 
 .random-content {
   display: flex;
@@ -41,7 +42,7 @@ header {
   width: 560px;
 }
 
-.watch-container {
+/* .watch-container {
   background: rgb(79, 79, 132);
   color: white;
   border: 3px solid salmon;
@@ -57,4 +58,4 @@ header {
   padding-bottom: 20px;
   margin: 20px;
   background: rgb(158, 54, 84);
-}
+} */
