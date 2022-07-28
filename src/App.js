@@ -29,12 +29,5 @@ function App() {
     </div>
   );
 }
-// echo "# Watch_list" >> README.md
-// git init
-// git add README.md
-// git commit -m "first commit"
-// git branch -M main
-// git remote add origin https://github.com/ctelfair20/Watch_list.git
-// git push -u origin main
 
 export default App;
