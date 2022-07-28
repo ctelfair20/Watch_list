@@ -15,7 +15,7 @@ code {
 
 .App {
   text-align: center;
-  padding: 15px;
+  /* padding: 15px; */
   background: #6c9748;
 }
 
@@ -36,7 +36,6 @@ header {
 .random-content {
   display: flex;
   justify-content: space-between;
-  /* margin: 20px; */
   background: #61dafb;
 }
 
@@ -55,6 +54,15 @@ header {
   border: 3px solid salmon;
   height: 500px;
   width: 560px;
+}
+
+.footer-content {
+  background: #f0d62d;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 65px;
+  width: 100%;
 }
 
 /* .watch-container {

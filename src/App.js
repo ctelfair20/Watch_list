@@ -2,6 +2,7 @@ import './App.css';
 import Header from './Header';
 import GenreBox from "./GenreBox";
 import ChoiceBox from './ChoiceBox';
+import Footer from './Footer';
 // import WatchList from './WatchList';
 
 function App() {
@@ -26,7 +27,7 @@ function App() {
         <WatchList />
         <WatchList />
       </div> */}
-      <Header />
+      <Footer />
     </div>
   );
 }
