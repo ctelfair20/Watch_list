@@ -9,11 +9,12 @@ const GenreBox = () => {
           <input type="radio" /> Adventure
           <input type="radio" /> Action
           <input type="radio" /> Comedy
-          <input type="radio" /> Slice of Life
           <input type="radio" /> Drama
         </div>
         <div className="genre-column">
           <input type="radio" /> Fantasy
+          <input type="radio" /> Slice of Life
+          <input type="radio" /> Sports
           <input type="radio" /> Supernatural
           <input type="radio" /> Magic
           <input type="radio" /> Mystery

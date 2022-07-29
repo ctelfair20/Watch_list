@@ -10,5 +10,5 @@ app.use(express.json());
 app.get('/', getHome);
 
 app.listen(port, () => {
-  console.log(`app listening on port ${port}`)
+  console.log(`app listening on port ${port}`);
 });
