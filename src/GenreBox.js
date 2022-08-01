@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import CheckBox from './CheckBox'
 import { getAnime } from './requestHandlers'
 
 const GenreBox = () => {
