@@ -1,14 +1,33 @@
 import axios from 'axios'
 
-export const getAnime = async () => {
+const arrToStringGenres = (checked) => {
+  console.log('len', checked.length, 'last', checked.length - 1);
+  let genres = '';
+  if (checked.length === 1) {
+    return genres += checked[0];
+  }
+  checked.map((genre, i) => {
+    if (i === 0) {
+      console.log('hi', i);
+      return genres += genre;
+    } else if (i > 0) {
+      console.log('is this happening');
+      return genres += `,${genre}`;
+    }
+  })
+  console.log(genres);
+  return genres;
+}
+
+
+export const getAnime = async (arr) => {
   const options = {
     method: 'GET',
     url: 'https://anime-db.p.rapidapi.com/anime',
     params: {
       page: '1',
       size: '10',
-      search: 'Fullmetal',
-      genres: 'Fantasy,Drama',
+      genres: arrToStringGenres(arr),
       sortBy: 'ranking',
       sortOrder: 'asc'
     },

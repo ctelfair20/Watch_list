@@ -48,7 +48,7 @@ const GenreBox = () => {
         <CheckBox genreList={genreList2} onCheck={handleChecked} />
         <CheckBox genreList={genreList3} onCheck={handleChecked} />
       </div>
-      <button onClick={getAnime}>
+      <button onClick={() => { getAnime(checked) }}>
         random Anime!
       </button>
     </div>
