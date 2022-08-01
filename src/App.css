@@ -40,12 +40,27 @@ header {
 }
 
 .genre-container {
-  font-size: 30px;
+  font-size: 20px;
   background: rgb(4, 4, 212);
   color: white;
   border: 3px solid salmon;
-  height: 300px;
+  height: 220px;
   width: 540px;
+}
+
+.genre-container .title {
+  font-size: 30px;
+}
+
+.genre-lists {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.genre {
+  display: flex;
 }
 
 .choice-container {

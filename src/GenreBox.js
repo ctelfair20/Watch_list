@@ -2,6 +2,28 @@ import { getAnime } from './requestHandlers'
 
 const GenreBox = () => {
 
+  const genreList1 = [
+    "Adventure",
+    "Action",
+    "Comedy",
+    "Drama",
+    "Fantasy",
+  ]
+  const genreList2 = [
+    "Historical",
+    "Horror",
+    "Magic",
+    "Mystery",
+    "Psychological"
+  ]
+  const genreList3 = [
+    "Romance",
+    "SciFi",
+    "Slice of Life",
+    "Sports",
+    "Supernatural",
+  ]
+
   return (
     <div className="genre-container">
       <div className="title">
@@ -9,25 +31,25 @@ const GenreBox = () => {
       </div>
       <div className="genre-lists">
         <div className="genre-column">
-          <input type="radio" /> Adventure
-          <input type="radio" /> Action
-          <input type="radio" /> Comedy
-          <input type="radio" /> Drama
-          <input type="radio" /> Fantasy
+          {genreList1.map((item, index) => (
+            <div key={index} className="genre">
+              <input type="radio" />{item}
+            </div>
+          ))}
         </div>
         <div className="genre-column">
-          <input type="radio" /> Historical
-          <input type="radio" /> Horror
-          <input type="radio" /> Magic
-          <input type="radio" /> Mystery
-          <input type="radio" /> Psychological
+          {genreList2.map((item, index) => (
+            <div key={index} className="genre">
+              <input type="radio" />{item}
+            </div>
+          ))}
         </div>
         <div className="genre-column">
-          <input type="radio" /> Romance
-          <input type="radio" /> SciFi
-          <input type="radio" /> Slice of Life
-          <input type="radio" /> Sports
-          <input type="radio" /> Supernatural
+          {genreList3.map((item, index) => (
+            <div key={index} className="genre">
+              <input type="radio" />{item}
+            </div>
+          ))}
         </div>
       </div>
       <button onClick={getAnime}>
