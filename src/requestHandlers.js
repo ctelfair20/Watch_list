@@ -15,6 +15,12 @@ const arrToStringGenres = (checked) => {
   return genres;
 }
 
+const randomAnime = (arr) => {
+  const randomIndex = (Math.floor(Math.random() * arr.length))
+  const randomAnime = arr[randomIndex];
+  console.log(randomAnime);
+  return randomAnime;
+};
 
 export const getAnime = async (arr) => {
   const options = {
@@ -35,7 +41,7 @@ export const getAnime = async (arr) => {
 
   try {
     const data = await axios.request(options);
-    console.log(data.data)
+    randomAnime(data.data.data);
   } catch (err) {
     console.log(`ERROR: ${err}`)
   }

@@ -1,4 +1,5 @@
-const ChoiceBox = () => {
+const ChoiceBox = ({ random }) => {
+
   return (
     <div className="choice-container">
       <div className="title">

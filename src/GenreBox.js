@@ -2,7 +2,7 @@ import { useState } from 'react';
 import CheckBox from './CheckBox';
 import { getAnime } from './requestHandlers';
 
-const GenreBox = () => {
+const GenreBox = ({ setRandom }) => {
   const [checked, setChecked] = useState([]);
 
   const handleChecked = (e) => {
@@ -48,7 +48,7 @@ const GenreBox = () => {
         <CheckBox genreList={genreList2} onCheck={handleChecked} />
         <CheckBox genreList={genreList3} onCheck={handleChecked} />
       </div>
-      <button onClick={() => { getAnime(checked) }}>
+      <button onClick={() => { setRandom(getAnime(checked)) }}>
         random Anime!
       </button>
     </div>
