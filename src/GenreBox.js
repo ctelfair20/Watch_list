@@ -5,11 +5,13 @@ const GenreBox = () => {
   const [checked, setChecked] = useState([]);
 
   const handleChecked = (e) => {
-    const updateCheckedGenres = [...checked];
+    let updateCheckedGenres = [...checked];
     if (e.target.checked) {
-      console.log(e.target.value);
+      updateCheckedGenres = [...checked, e.target.value]
+      setChecked(updateCheckedGenres)
     } else {
-      console.log(e.target);
+      updateCheckedGenres.splice(updateCheckedGenres.indexOf(e.target.value), 1)
+      setChecked(updateCheckedGenres)
     }
   }
 
