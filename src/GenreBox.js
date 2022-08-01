@@ -1,6 +1,8 @@
+import { useState } from 'react';
 import { getAnime } from './requestHandlers'
 
 const GenreBox = () => {
+  const [checked, setChecked] = useState([]);
 
   const genreList1 = [
     "Adventure",
