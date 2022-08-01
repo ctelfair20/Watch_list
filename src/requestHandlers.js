@@ -23,8 +23,6 @@ export const getAnime = async () => {
     console.log(data.data)
   } catch (err) {
     console.log(`ERROR: ${err}`)
-  } finally {
-    console.log('this did a thing')
   }
 }
 
