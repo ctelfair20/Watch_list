@@ -1,4 +1,8 @@
 const GenreBox = () => {
+
+  const handleOnClick = () => {
+    console.log('the click works')
+  }
   return (
     <div className="genre-container">
       <div className="title">
@@ -27,7 +31,7 @@ const GenreBox = () => {
           <input type="radio" /> Supernatural
         </div>
       </div>
-      <button>
+      <button onClick={handleOnClick}>
         random Anime!
       </button>
     </div>
