@@ -7,7 +7,7 @@ const GenreBox = () => {
   const handleChecked = (e) => {
     const updateCheckedGenres = [...checked];
     if (e.target.checked) {
-      console.log(e.target.checked);
+      console.log(e.target.value);
     } else {
       console.log(e.target);
     }
@@ -44,21 +44,21 @@ const GenreBox = () => {
         <div className="genre-column">
           {genreList1.map((item, index) => (
             <div key={index} className="genre">
-              <input type="checkbox" onChange={handleChecked} />{item}
+              <input value={item} type="checkbox" onChange={handleChecked} />{item}
             </div>
           ))}
         </div>
         <div className="genre-column">
           {genreList2.map((item, index) => (
             <div key={index} className="genre">
-              <input type="checkbox" onChange={handleChecked} />{item}
+              <input value={item} type="checkbox" onChange={handleChecked} />{item}
             </div>
           ))}
         </div>
         <div className="genre-column">
           {genreList3.map((item, index) => (
             <div key={index} className="genre">
-              <input type="checkbox" onChange={handleChecked} />{item}
+              <input value={item} type="checkbox" onChange={handleChecked} />{item}
             </div>
           ))}
         </div>
